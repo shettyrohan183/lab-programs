@@ -16,8 +16,8 @@ public class horspoll
         {
             table[pat[j]]=m-1-j;
         }
-        // for(int i=65;i<123;i++)
-        // System.out.print(" "+table[i]);
+         for(int i=91;i<127;i++)
+        System.out.print(" "+table[i]);
     }
     public int find(String text,String pattern)
     {
@@ -53,6 +53,8 @@ return -1;
         String text = sc.nextLine();
         System.out.print("enter the pattern :");
         String pattern=sc.next();
+        text=text.toLowerCase();
+        pattern=pattern.toLowerCase();
         int pos;
 horspoll h=new horspoll();
 h.shifttable(pattern);
